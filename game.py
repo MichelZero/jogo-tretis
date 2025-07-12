@@ -1,3 +1,6 @@
+# para gerar os caracteres corretamente, use utf-8
+# -*- coding: utf-8 -*-
+
 import pygame
 import random
 from config import *
@@ -182,7 +185,7 @@ class Game:
         next_y = 100
         
         # Título
-        text = self.font.render("Próxima:", True, WHITE)
+        text = self.font.render("Proxima:", True, WHITE)
         self.screen.blit(text, (next_x, next_y - 30))
         
         # Desenhar próxima peça
@@ -220,10 +223,10 @@ class Game:
         controls_y = info_y + 150
         controls = [
             "Controles:",
-            "← → : Mover",
-            "↓ : Queda rápida",
-            "↑ : Rotacionar",
-            "Espaço: Drop",
+            "A/D ou Setas: Mover",
+            "S ou Seta: Queda rapida",
+            "W ou Seta: Rotacionar",
+            "Espaco: Drop",
             "P: Pausar",
             "R: Reiniciar"
         ]
@@ -319,16 +322,16 @@ class Game:
                         self.paused = not self.paused
                 
                 elif not self.game_over and not self.paused:
-                    if event.key == pygame.K_LEFT:
+                    if event.key == pygame.K_LEFT or event.key == pygame.K_a:
                         self.move_piece(-1, 0)
                     
-                    elif event.key == pygame.K_RIGHT:
+                    elif event.key == pygame.K_RIGHT or event.key == pygame.K_d:
                         self.move_piece(1, 0)
                     
-                    elif event.key == pygame.K_DOWN:
+                    elif event.key == pygame.K_DOWN or event.key == pygame.K_s:
                         self.move_piece(0, 1)
                     
-                    elif event.key == pygame.K_UP:
+                    elif event.key == pygame.K_UP or event.key == pygame.K_w:
                         self.rotate_piece()
                     
                     elif event.key == pygame.K_SPACE:

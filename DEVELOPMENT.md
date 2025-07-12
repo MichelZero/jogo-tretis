@@ -14,13 +14,13 @@ git clone https://github.com/MichelZero/jogo-tretis.git
 cd jogo-tretis
 
 # Criar ambiente virtual (recomendado)
-python -m venv venv
+python -m venv .venv
 
 # Ativar ambiente virtual
 # Windows:
-venv\Scripts\activate
+.venv\Scripts\activate
 # Linux/Mac:
-source venv/bin/activate
+source .venv/bin/activate
 
 # Instalar dependências
 pip install -r requirements.txt
@@ -160,8 +160,13 @@ python main.py
 ### Problemas Comuns
 
 1. **Pygame não encontrado**
+    - Instalar Pygame com o comando:
    ```bash
    pip install pygame==2.5.2
+   ```
+    - sempre que puder atualizar o Pygame:
+   ```bash
+   pip install pygame --upgrade
    ```
 
 2. **Erro de importação**
