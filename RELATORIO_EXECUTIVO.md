@@ -2,7 +2,7 @@
 
 ## Resumo Executivo
 
-Este documento apresenta o relatório completo dos passos executados na construção de um jogo Tetris funcional em Python, Conclusão em 11 de julho de 2025.
+Este documento apresenta o relatório completo dos passos executados na construção de um jogo Tetris funcional em Python, Conclusão em 29 de maio de 2023.
 
 ## 🎯 Objetivo do Projeto
 

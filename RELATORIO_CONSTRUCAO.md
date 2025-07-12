@@ -3,8 +3,8 @@
 ## 🎯 Objetivo
 Criar um jogo completo de Tetris em Python utilizando a biblioteca Pygame, com todas as funcionalidades clássicas do jogo.
 
-## 📅 Data de Desenvolvimento
-11 de julho de 2025
+## 📅 Data de Conclusão
+29 de maio de 2023
 
 ## 🔍 Análise Inicial do Workspace
 
