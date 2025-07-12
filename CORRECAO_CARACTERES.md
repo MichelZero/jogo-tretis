@@ -1,6 +1,6 @@
 # 🔧 Correção de Caracteres - Tetris
 
-## Problema Identificado
+## Problema Identificado (11/07/2025)
 Alguns caracteres estavam aparecendo como retângulos no jogo, principalmente os símbolos de setas (←, →, ↑, ↓) e acentos em "Próxima".
 
 ## Correções Realizadas
